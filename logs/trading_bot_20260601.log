@@ -1,0 +1,27 @@
+2026-06-01 17:44:54 | DEBUG    | validators | Validation passed — symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop=None
+2026-06-01 17:44:54 | INFO     | client | BinanceClient initialized - connected to Testnet
+2026-06-01 17:44:54 | INFO     | orders | Placing MARKET BUY order — BTCUSDT qty=0.01
+2026-06-01 17:44:54 | DEBUG    | client | REQUEST POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1780316094868}
+2026-06-01 17:44:55 | DEBUG    | client | RESPONSE 200 | {'orderId': 13694509112, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'Wgom7RjnHNzc9Lw4qApAa6', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1780316098183}
+2026-06-01 17:44:55 | INFO     | orders | MARKET order placed successfully — orderId=13694509112
+2026-06-01 17:45:18 | DEBUG    | validators | Validation passed — symbol=BTCUSDT side=SELL type=LIMIT qty=0.01 price=95000.0 stop=None
+2026-06-01 17:45:18 | INFO     | client | BinanceClient initialized - connected to Testnet
+2026-06-01 17:45:18 | INFO     | orders | Placing LIMIT SELL order — BTCUSDT qty=0.01 price=95000.0
+2026-06-01 17:45:18 | DEBUG    | client | REQUEST POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 95000.0, 'timeInForce': 'GTC', 'timestamp': 1780316118679}
+2026-06-01 17:45:19 | DEBUG    | client | RESPONSE 200 | {'orderId': 13694534896, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'ospQyZCHdAC7ufLwHX0KKq', 'price': '95000.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1780316121937}
+2026-06-01 17:45:19 | INFO     | orders | LIMIT order placed successfully — orderId=13694534896
+2026-06-01 17:45:39 | DEBUG    | validators | Validation passed — symbol=BTCUSDT side=BUY type=STOP_MARKET qty=0.01 price=None stop=90000.0
+2026-06-01 17:45:39 | INFO     | client | BinanceClient initialized - connected to Testnet
+2026-06-01 17:45:39 | INFO     | orders | Placing STOP_MARKET BUY order — BTCUSDT qty=0.01 stopPrice=90000.0
+2026-06-01 17:45:39 | DEBUG    | client | REQUEST POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': 0.01, 'stopPrice': 90000.0, 'timestamp': 1780316139776}
+2026-06-01 17:45:40 | ERROR    | client | API ERROR 400 | {'code': -4120, 'msg': 'Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.'}
+2026-06-01 17:46:38 | DEBUG    | validators | Validation passed — symbol=BTCUSDT side=BUY type=STOP_MARKET qty=0.01 price=None stop=90000.0
+2026-06-01 17:46:38 | INFO     | client | BinanceClient initialized - connected to Testnet
+2026-06-01 17:46:38 | INFO     | orders | Placing STOP_MARKET BUY order - BTCUSDT qty=0.01 stopPrice=90000.0
+2026-06-01 17:46:38 | DEBUG    | client | REQUEST POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'quantity': 0.01, 'stopPrice': 90000.0, 'type': 'STOP_MARKET', 'workingType': 'CONTRACT_PRICE', 'timestamp': 1780316198114}
+2026-06-01 17:46:39 | ERROR    | client | API ERROR 400 | {'code': -4120, 'msg': 'Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.'}
+2026-06-01 17:47:27 | DEBUG    | validators | Validation passed — symbol=BTCUSDT side=BUY type=STOP_MARKET qty=0.01 price=None stop=90000.0
+2026-06-01 17:47:27 | INFO     | client | BinanceClient initialized - connected to Testnet
+2026-06-01 17:47:27 | INFO     | orders | Placing STOP BUY order - BTCUSDT qty=0.01 stopPrice=90000.0
+2026-06-01 17:47:27 | DEBUG    | client | REQUEST POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP', 'quantity': 0.01, 'price': 89100.0, 'stopPrice': 90000.0, 'timeInForce': 'GTC', 'timestamp': 1780316247399}
+2026-06-01 17:47:28 | ERROR    | client | API ERROR 400 | {'code': -4120, 'msg': 'Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.'}
